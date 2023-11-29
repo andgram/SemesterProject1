@@ -1,0 +1,25 @@
+.gallery {
+  display: grid;
+  gap: .8em;
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas: 
+  "left ."
+  "left .";
+}
+
+.card {
+  border-radius: 30px;
+}
+
+.card1 {
+  grid-area: left;
+  background-image: url('images/anatomy.jpeg');
+}
+
+.card2 {
+  background-image: url('images/childgame.jpeg');
+}
+
+.card3 {
+  background-image: url('images/mammoth.jpeg');
+}
