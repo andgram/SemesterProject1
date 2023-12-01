@@ -9,64 +9,85 @@
     href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Nunito:wght@400;700&display=swap">
   <link rel="stylesheet" href="global-styles.css">
   <link rel="stylesheet" href="home-styles.css">
+  <script src="/nav.js" defer=""></script>
   <title>Home – Community Science</title>
 </head>
 
 <body>
   <header>
-    <div class="container">
-      <img class="logo" src="" alt="">
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Exhibition</a></li>
-          <li><a href="#">Contribute</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="header-wrapper">
+
+      <div class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" role="button">
+        <span class="sr-only">Menu</span></div>
+
+        <a href="index.html"><img class="header-logo" src="/images/logo-black.svg" alt=""></a>
+
+        <nav>
+          <ul id="primary-navigation" data-visible="false" class="primary-navigation nav-flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Exhibition</a></li>
+            <li><a href="#">Contribute</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
     </div>
   </header>
 
-  <section>
+ 
+  
+  <section class="hero-section-spacing">
     <div class="container">
+      <div class="image-container hero-img">
+        <img src="/images/hero.jpg" alt="">
+      </div>
       <div class="split">
         <div class="hero-left-col">
           <div class="tag">Ready To Learn?</div>
-          <h1>Let's Explore <br> Together</h1>
+          <h1><span class="nowrap">Let's Explore</span> <br> Together</h1>
         </div>
         <div class="hero-right-col">
           <p>Come join us at the Community Science
-            Museum where we’re committed to making
+            Museum where we are committed to making
             science accessible to all.
           </p>
-          <div class="hero-small-images split">
-            <div class="image-con-left"></div>
-            <div class="image-con-right"></div>
+          <div class="hero-small-images">
+            <div class="image-container-small">
+              <img src="/images/VR.jpg" alt="">
+            </div>
+            <div class="image-container-small">
+              <img src="/images/moon.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>
-      </div>
-  </section>
-
-  <section class="museum-bg">
-    <div class="container">
-      <h2>Museum Experience</h2>
-      <p>Over the course of human history, science has developed from our early understanding of fire, wind, water, and
-        earth to exploring everything from galaxies far away to the very building blocks of life itself.
-        The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and
-        perhaps even ignite a lifelong passion to continue the exploration of the world around us.
-        We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we
-        have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are
-        designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits
-        – they only come to life at night when everyone’s gone home).</p>
     </div>
   </section>
 
-  <section>
+  <section class="museum-bg section-spacing">
+    <div class="container">
+      <div class="museum-experience-txt">
+        <h2>Museum Experience</h2>
+        <p>Over the course of human history, science has developed from our early understanding of fire, wind, water,
+          and
+          earth to exploring everything from galaxies far away to the very building blocks of life itself.
+          The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and
+          perhaps even ignite a lifelong passion to continue the exploration of the world around us.
+          We believe science should not be confined to the textbook, but brought to live through exhibits. This is why
+          we
+          have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits
+          are
+          designed for you to interact with and play around to see science come to life (apart from the dinosaur
+          exhibits
+          – they only come to life at night when everyone’s gone home).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-spacing">
     <div class="container">
       <h2>Explore our alternatives</h2>
-      <div class="split">
-        <div>
+      <div class="split center">
+        <div class="text-section">
           <h3>For kids</h3>
           <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to
             see and do.
@@ -78,19 +99,16 @@
             During the school holidays we run special holiday clubs where you can join other children your age to go on
             a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club
             and how you can join, send us a message.</p>
-          <a href="#" class="main-button">
-            Read More
-          </a>
         </div>
-        <div class="gallery">
-            <div class="card card1"></div>
-            <div class="card card2"></div>
-            <div class="card card3"></div>
+        <div class="image-container">
+          <img src="/images/tets-frame.jpg" class="section-img" alt="">
         </div>
       </div>
-      <div class="split">
+      <div class="split sub-section">
         <div>
-          <img class="mini-banner" src="" alt="">
+          <div class="image-container short">
+            <img src="/images/researcher.jpg" alt="">
+          </div>
           <h3>For Researchers</h3>
           <p>Are you looking to get involved with our team of researchers and academics? Our museum offers various ways
             for you to use our resources and contribute towards them, including online records, laboratory space, and
@@ -100,7 +118,9 @@
           <a href="#" class="main-button">Read More</a>
         </div>
         <div>
-          <img class="mini-banner" src="" alt="">
+          <div class="image-container short">
+            <img src="/images/teacher.jpg" alt="">
+          </div>
           <h3>For teachers</h3>
           <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. Our
             team are on hand to give your students guided tours of the museum, teach them in our learning laboratory,
@@ -110,31 +130,33 @@
         </div>
       </div>
     </div>
+
+    </div>
   </section>
 
   <footer class="bg-purple">
-    <div class="container split">
-      <div class="col1">
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>Exhibition</li>
-            <li>Contribute</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col2">
-        <h3>Newsletter</h3>
-        <form action="https://example.com/submit-form">
-          <label for="email" class="visually-hidden">Your Email Address:</label>
-          <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-          <br>
-          <button class="main-button" type="submit">Subscribe Now</button>
-        </form>
-      </div>
-      <div class="col3">
-        <img class="logo" src="" alt="">
+    <div class="container">
+      
+      <div class="footer-menu">
+        <div class="footer-content col-1">
+          <a href="#">Home</a>
+          <a href="#">Exhibition</a>
+          <a href="#">Contribute</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-content col-2">
+          <h3>Newsletter</h3>
+          <form action="https://example.com/submit-form">
+            <label for="email" class="visually-hidden">Your Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required="">
+            <br>
+            <button class="secondary-button" type="submit">Subscribe Now</button>
+          </form>
+        </div>        
+        <div class="footer-content col-3">
+          <a href="index.html"><img class="footer-logo" src="images/logo-white.svg" alt="Community logo"></a>
+          <p>© 2023 Community. <br> All Rights Reserved.</p>
+        </div>
       </div>
     </div>
   </footer>

@@ -1,25 +1,48 @@
-.gallery {
-  display: grid;
-  gap: .8em;
-  grid-template-columns: repeat(2, auto);
-  grid-template-areas: 
-  "left ."
-  "left .";
+.museum-bg {
+  background-image: url('/images/museum-bg.jpg');
+  color: white;
+  background-size: cover;
+  text-align: center;
 }
 
-.card {
-  border-radius: 30px;
+.hero-section-spacing {
+  padding-bottom: 4rem;
+  padding-top: 1rem;
 }
 
-.card1 {
-  grid-area: left;
-  background-image: url('images/anatomy.jpeg');
+@media (min-width: 50em) {
+  .hero-section-spacing {
+  padding-bottom: 7rem;
+  padding-top: 1rem
 }
 
-.card2 {
-  background-image: url('images/childgame.jpeg');
+.hero-section-spacing h1 {
+  margin: 0;
+}
 }
 
-.card3 {
-  background-image: url('images/mammoth.jpeg');
+.hero-small-images {
+  display: flex;
+  gap: 1em;
+}
+
+.tag {
+  padding: .6em 2em;
+  background-color: black;
+  color: #fff;
+  border-radius: 50px;
+  width: fit-content;
+  margin-bottom: 1em;
+}
+
+.hero-img {
+  margin-bottom: 4em;
+}
+
+.hero-section-spacing h1 {
+  margin-bottom: 1rem;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
