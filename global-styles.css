@@ -166,6 +166,10 @@ footer {
   align-items: center;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 
 
 /* IMAGE */
@@ -369,6 +373,47 @@ footer a {
   clip: rect(0 0 0 0);
   overflow: hidden;
   white-space: nowrap;
+}
+
+/* CARDS */
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px 0px rgba(213, 213, 213, 0.75);
+}
+
+.card-info {
+  padding: 1.4em 2em;
+}
+
+@media (max-width: 50em) {
+  .card img {
+    width: 100%;
+  }
+
+  .card {
+    margin-top: 2em;
+  }
+}
+
+/* TABLE */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: .6em;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
 }
 
 
