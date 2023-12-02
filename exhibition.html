@@ -8,71 +8,116 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Nunito:wght@400;700&display=swap">
   <link rel="stylesheet" href="global-styles.css">
-  <link rel="stylesheet" href="exhibition-styles.css">
+  <script src="/nav.js" defer=""></script>
   <title>Home – Community Science</title>
 </head>
 
 <body>
-  <h1 class="text-center">Exhibition</h1>
-  <section>
+  <header>
+    <div class="header-wrapper">
+
+      <div class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" role="button">
+        <span class="sr-only">Menu</span></div>
+
+        <a href="index.html"><img class="header-logo" src="/images/logo-black.svg" alt=""></a>
+
+        <nav>
+          <ul id="primary-navigation" data-visible="false" class="primary-navigation nav-flex">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibition.html">Exhibition</a></li>
+            <li><a href="#">Contribute</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+
+  <h1 class="text-center">exhibition</h1>
+
+  <section class="section-spacing">
     <div class="container">
       <h2>Our Spaces</h2>
-      <div class="space-info split">
-        <div>
-          <h3>Cosmology</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nihil laudantium a similique vitae vero impedit dolor et nulla quisquam tempora facere aperiam, ipsum aliquid exercitationem distinctio ducimus sequi recusandae alias non dolore saepe. Quia repellendus sint soluta tempora deserunt.</p>
-        </div>
-        <div class="image-conatainer">
-          <img src="/images/mammoth.jpeg" alt="">
-        </div>
+    <div class="split center img-section">
+      <div class="image-container">
+        <img src="/images/cosmology.jpg" alt="">
       </div>
-      <div class="space-info split flip">
-        <div>
-          <h3>Cosmology</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nihil laudantium a similique vitae vero impedit dolor et nulla quisquam tempora facere aperiam, ipsum aliquid exercitationem distinctio ducimus sequi recusandae alias non dolore saepe. Quia repellendus sint soluta tempora deserunt.</p>
-        </div>
-        <div class="image-conatainer">
-          <img src="/images/mammoth.jpeg" alt="">
-        </div>
+      <div>
+        <h3>Cosmology</h3>
+        <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.
+          Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p>
       </div>
-      <div class="space-info split">
-        <div>
-          <h3>Cosmology</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nihil laudantium a similique vitae vero impedit dolor et nulla quisquam tempora facere aperiam, ipsum aliquid exercitationem distinctio ducimus sequi recusandae alias non dolore saepe. Quia repellendus sint soluta tempora deserunt.</p>
-        </div>
-        <div class="image-conatainer">
-          <img src="/images/mammoth.jpeg" alt="">
-        </div>
+    </div>
+    <div class="split center img-section flip">
+      <div class="image-container">
+        <img src="/images/evolution.jpg" alt="">
       </div>
-      <div class="space-info split flip">
-        <div>
-          <h3>Cosmology</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nihil laudantium a similique vitae vero impedit dolor et nulla quisquam tempora facere aperiam, ipsum aliquid exercitationem distinctio ducimus sequi recusandae alias non dolore saepe. Quia repellendus sint soluta tempora deserunt.</p>
-        </div>
-        <div class="image-conatainer">
-          <img src="/images/mammoth.jpeg" alt="">
-        </div>
+      <div>
+        <h3>Evolution</h3>
+        <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world.
+          Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
       </div>
-      <div class="space-info split">
-        <div>
-          <h3>Cosmology</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nihil laudantium a similique vitae vero impedit dolor et nulla quisquam tempora facere aperiam, ipsum aliquid exercitationem distinctio ducimus sequi recusandae alias non dolore saepe. Quia repellendus sint soluta tempora deserunt.</p>
-        </div>
-        <div class="image-conatainer">
-          <img src="/images/mammoth.jpeg" alt="">
-        </div>
+    </div>
+    <div class="split center img-section">
+      <div class="image-container">
+        <img src="/images/biology.jpg" alt="">
       </div>
-      <div class="space-info split flip">
-        <div>
-          <h3>Cosmology</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nihil laudantium a similique vitae vero impedit dolor et nulla quisquam tempora facere aperiam, ipsum aliquid exercitationem distinctio ducimus sequi recusandae alias non dolore saepe. Quia repellendus sint soluta tempora deserunt.</p>
+      <div>
+        <h3>Biology and Medicine</h3>
+        <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world.
+          For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant.
+          Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.</p>
+      </div>
+    </div>
+    <div class="split center img-section flip">
+      <div class="image-container">
+        <img src="/images/robotics.jpg" alt="">
+      </div>
+      <div>
+        <h3>Robotics and AI</h3>
+        <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.</p>
+      </div>
+    </div>
+    <div class="split center img-section">
+      <div class="image-container">
+        <img src="/images/ecology.jpg" alt="">
+      </div>
+      <div>
+        <h3>Ecology</h3>
+        <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet.</p>
+      </div>
+    </div>
+    
+    </div>
+  </section>
+ 
+
+
+  <footer class="bg-purple">
+    <div class="container">
+      
+      <div class="footer-menu">
+        <div class="footer-content col-1">
+          <a href="index.html">Home</a>
+          <a href="exhibition.html">Exhibition</a>
+          <a href="#">Contribute</a>
+          <a href="#">Contact</a>
         </div>
-        <div class="image-conatainer">
-          <img src="/images/mammoth.jpeg" alt="">
+        <div class="footer-content col-2">
+          <h3>Newsletter</h3>
+          <form action="https://example.com/submit-form">
+            <label for="email" class="visually-hidden">Your Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required="">
+            <br>
+            <button class="secondary-button" type="submit">Subscribe Now</button>
+          </form>
+        </div>        
+        <div class="footer-content col-3">
+          <a href="index.html"><img class="footer-logo" src="images/logo-white.svg" alt="Community logo"></a>
+          <p>© 2023 Community. <br> All Rights Reserved.</p>
         </div>
       </div>
     </div>
-  </section>
+  </footer>
 
 
 
