@@ -101,6 +101,10 @@ a {
   margin-bottom: .4rem;
 }
 
+address {
+  font-style: normal;
+}
+
 
 /* ====================
        components
@@ -313,6 +317,7 @@ footer {
   text-align: center;
 }
 
+
 .footer-menu input {
   width: 25em;
   height: 2.8em;
@@ -335,7 +340,10 @@ footer {
 
 .col-2 {
   margin-bottom: 4em;
+  display: grid;
+  grid-template-columns: 1fr;
 }
+
 
 .col-3 {
   display: flex;
