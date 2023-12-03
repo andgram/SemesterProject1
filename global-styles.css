@@ -29,8 +29,8 @@ body {
   font-weight: 400;
   font-size: var(--fs-300);
   line-height: 1.6;
-
   overflow-x: hidden;
+  background-color: #F4F5FF;
 
 }
 
@@ -57,6 +57,7 @@ p {
 }
 
 h1 {
+  margin-top: 2.5rem;
   font-size: var(--fs-800);
 }
 
@@ -110,8 +111,7 @@ a {
   text-align: center;
 }
 
-.section-spacing,
-footer {
+.section-spacing {
   padding: 4rem 0;
 }
 
@@ -121,7 +121,7 @@ footer {
 }
 
 .bg-shade {
-  background-color: var(--clr-neutral-200);
+  background-color: var(--clr-primary-500);
 }
 
 .bg-purple {
@@ -138,8 +138,7 @@ footer {
 }
 
 @media (min-width: 50em) {
-  .section-spacing,
-  footer {
+  .section-spacing {
   padding: 7rem 0;
 }
 
@@ -147,7 +146,6 @@ footer {
     display: flex;
   }
   
-
   .split > * + * {
     margin-left: 2em;
   }
@@ -168,6 +166,14 @@ footer {
 
 .space-between {
   justify-content: space-between;
+}
+
+.negative {
+  color: #fff;
+}
+
+.extra-space h3 {
+  margin-top: 2em;
 }
 
 
@@ -291,14 +297,24 @@ footer a {
   color: #fff;
 }
 
+footer {
+  padding-top: 5rem;
+}
+
+
 .footer-menu {
   display: flex;
   justify-content: space-between;
 }
 
 @media (max-width: 45em) {
-  .footer-menu {
+  .footer-menu, .bootom-items {
     flex-direction: column;
+  }
+
+  .bootom-items {
+    text-align: center;
+    gap: .5em;
   }
 }
 
@@ -333,6 +349,8 @@ footer a {
     margin-bottom: 0;
     text-align: left;
   }
+
+
 }
 
 @media (max-width: 45em) {
@@ -375,13 +393,28 @@ footer a {
   white-space: nowrap;
 }
 
+.footer-bottom {
+  background-color: var(--clr-primary-700);
+}
+
+.bootom-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
 /* CARDS */
+
+.events h2 {
+  color: #fff;
+}
 
 .card {
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 3px 3px 5px 0px rgba(213, 213, 213, 0.75);
+
 }
 
 .card-info {
@@ -404,16 +437,18 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  background-color: #fff;
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border: 1px solid rgb(199, 196, 208);
   padding: .6em;
   text-align: left;
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: var(--clr-primary-600);
+  color: #fff;
 }
 
 
