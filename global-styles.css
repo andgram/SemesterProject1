@@ -166,6 +166,11 @@ address {
   background-color: var(--clr-primary-500);
 }
 
+.bg-galaxy {
+  background-image: url('/images/galaxy-bg.jpg');
+  background-size: cover;
+}
+
 .bg-purple {
   background-color: var(--clr-primary-600);
   color: var(--clr-neutral-200);
@@ -247,27 +252,43 @@ img {
    Cards
    ==================== */
 
+   .card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+
+  }
+
 
 .card {
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
+  flex: 0 0 30%;
+  min-width: 18em;
+  min-width: 200px;
 
+}
+
+.card img {
+  width: 100%;
 }
 
 .card-info {
-  padding: 1.4em 2em;
+  padding: 1.4em 1.4em;
 }
 
-@media (max-width: 50em) {
-  .card img {
-    width: 100%;
-  }
-
+@media (max-width: 55em) {
   .card {
     margin-top: 2em;
   }
+
+  .card-container {
+    flex-direction: column;
+  }
 }
+
+
 
 
 
@@ -329,7 +350,7 @@ footer {
 }
 
 .footer-logo {
-  width: 12rem;
+  width: 10em;
 }
 
 .col-1 {
