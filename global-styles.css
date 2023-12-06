@@ -67,15 +67,18 @@ h1 {
   font-size: var(--fs-800);
 }
 
-h2, .secondary-h1 {
+h2,
+.secondary-h1 {
   font-size: var(--fs-600);
 }
 
-h3, .secondary-h2 {
+h3,
+.secondary-h2 {
   font-size: var(--fs-400);
 }
 
-h4, .secondary-h3 {
+h4,
+.secondary-h3 {
   font-size: var(--fs-300);
 }
 
@@ -92,7 +95,8 @@ a {
   font-size: var(--fs-300);
 }
 
-.extra-space h3, .extra-space h2 {
+.extra-space h3,
+.extra-space h2 {
   margin-top: 2em;
 }
 
@@ -176,6 +180,18 @@ address {
   color: var(--clr-neutral-200);
 }
 
+.museum-bg {
+  background-image: url('/images/museum-bg.jpg');
+  color: white;
+  background-size: cover;
+  text-align: center;
+}
+
+.museum-bg p {
+  text-align: left;
+}
+
+
 @media (min-width: 50em) {
   .section-spacing {
     padding: 7rem 0;
@@ -196,6 +212,12 @@ address {
 
   .split>* {
     flex-basis: 100%;
+  }
+
+  .two-columns {
+    column-count: 2;
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -219,11 +241,11 @@ img {
   border-radius: 15px;
 }
 
-.img-section {
+.img-flex-section {
   padding-bottom: 3em;
 }
 
-.img-section .image-container {
+.img-flex-section .image-container {
   padding-bottom: 2em;
 }
 
@@ -233,15 +255,15 @@ img {
 }
 
 @media (min-width: 50em) {
-  .img-section p {
+  .img-flex-section p {
     margin: 0;
   }
 
-  .img-section {
+  .img-flex-section {
     padding-bottom: 6em;
   }
 
-  .img-section .image-container {
+  .img-flex-section.image-container {
     padding-bottom: 0em;
   }
 }
@@ -252,21 +274,19 @@ img {
    Cards
    ==================== */
 
-   .card-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 1em;
-
-  }
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 
 .card {
-  background-color: #fff;
+  background-color: var(--clr-neutral-200);
   border-radius: 15px;
   overflow: hidden;
   flex: 0 0 30%;
-  min-width: 18em;
-  min-width: 200px;
+  min-width: 12.5em;
+  max-width: 30em;
 
 }
 
@@ -280,15 +300,13 @@ img {
 
 @media (max-width: 55em) {
   .card {
-    margin-top: 2em;
+    margin: 2em auto 0;
   }
 
   .card-container {
     flex-direction: column;
   }
 }
-
-
 
 
 
@@ -299,7 +317,7 @@ img {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 1.25em;
   background-color: #fff;
 }
 
@@ -312,7 +330,7 @@ td {
 
 th {
   background-color: var(--clr-primary-600);
-  color: #fff;
+  color:var(--clr-neutral-200);
 }
 
 
@@ -322,7 +340,7 @@ th {
    ==================== */
 
 footer a {
-  color: #fff;
+  color: var(--clr-neutral-200);
 }
 
 footer {
@@ -337,7 +355,6 @@ footer {
 .footer-content {
   text-align: center;
 }
-
 
 .footer-menu input {
   width: 25em;
@@ -364,7 +381,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
 }
-
 
 .col-3 {
   display: flex;
@@ -407,6 +423,10 @@ footer {
     text-align: center;
     gap: .5em;
   }
+
+  .col-1 {
+    justify-content: center;
+  }
 }
 
 @media (min-width: 45em) {
@@ -416,15 +436,7 @@ footer {
     margin-bottom: 0;
     text-align: left;
   }
-}
 
-@media (max-width: 45em) {
-  .col-1 {
-    justify-content: center;
-  }
-}
-
-@media (min-width: 45em) {
   .col-2 {
     margin-bottom: 0;
   }
@@ -434,6 +446,7 @@ footer {
 /* ====================
    Header
    ==================== */
+
 
 .header-wrapper {
   margin-inline: auto;
@@ -503,5 +516,58 @@ nav a {
     right: 1.5rem;
     z-index: 9999;
     display: block;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url(images/close-circle.svg);
+  }
+}
+
+
+
+/* ====================
+   Hero section
+   ==================== */
+
+
+.hero-section-spacing {
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+}
+
+.hero-small-images {
+  display: flex;
+  gap: 1em;
+}
+
+.tag {
+  padding: .6em 2em;
+  background-color: var(--clr-primary-600);
+  color: #fff;
+  border-radius: 50px;
+  width: fit-content;
+  margin-bottom: 1em;
+}
+
+.hero-img {
+  margin-bottom: 4em;
+}
+
+.hero-section-spacing h1 {
+  margin-bottom: 1rem;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@media (min-width: 50em) {
+  .hero-section-spacing {
+    padding-bottom: 7rem;
+    padding-top: 1rem
+  }
+
+  .hero-section-spacing h1 {
+    margin: 0;
   }
 }
