@@ -268,17 +268,64 @@ img {
   }
 }
 
+/* ====================
+   Image Gallery
+   ==================== */
+
+.image-grid-container {
+  display: grid;
+  gap: 2em;
+  grid-template-areas: 
+  "left ."
+  "left .";
+  aspect-ratio: 1;
+}
+
+.img-card {
+  background: blue;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.img-card1 {
+  grid-area: left;
+  background-image: url('/images/science-boy-1-1.jpg');
+}
+
+.img-card2 {
+  background-image: url('/images/mammoth.jpg');
+}
+
+.img-card3 {
+  background-image: url('/images/childgame.jpeg');
+}
+
+.img-card4 {
+  background-image: url('/images/cafe.jpg');
+  grid-area: left;
+}
+
+.img-card5 {
+  background-image: url('/images/egg.jpg');
+}
+
+.img-card6 {
+  background-image: url('/images/coffee.jpg');
+}
+
 
 
 /* ====================
-   Cards
+   Event cards
    ==================== */
+
 
 .card-container {
   display: flex;
   justify-content: space-between;
 }
-
 
 .card {
   background-color: var(--clr-neutral-200);
@@ -287,7 +334,6 @@ img {
   flex: 0 0 30%;
   min-width: 12.5em;
   max-width: 30em;
-
 }
 
 .card img {
@@ -571,3 +617,35 @@ nav a {
     margin: 0;
   }
 }
+
+/* ====================
+   Animations
+   ==================== */
+   
+
+   @keyframes slideInLeft {
+    from {
+      transform: translateX(-300px);
+    }
+    to {
+      transform: translateX(0);
+    }
+   }
+
+   @keyframes zoomOut {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+   }
+
+
+   .slideInLeft {
+    animation: slideInLeft 1s ease;
+   }
+
+   .zoomIn {
+    animation: zoomOut 1s ease;
+  }
