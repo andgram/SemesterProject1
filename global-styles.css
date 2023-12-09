@@ -8,6 +8,8 @@
   --clr-primary-700: #171741;
 
   --clr-neutral-200: #ECECEC;
+  --clr-neutral-300: #cecee1;
+  
 
   --ff-primary: 'Nunito', sans-serif;
   --ff-accent: 'Archivo', sans-serif;
@@ -117,9 +119,18 @@ address {
 
 .main-button {
   color: #fff;
+  border: none;
   background-color: var(--clr-primary-500);
-  padding: .3em 1em;
+  padding: .4em 1em;
   border-radius: 50px;
+  transition: transform 1000ms;
+  font-size: var(--fs-300);
+}
+
+.main-button:hover {
+  transform: translateY(-0.5rem);
+  transition: transform 250ms;
+  background-color: var(--clr-primary-600);
 }
 
 .secondary-button {
@@ -128,8 +139,14 @@ address {
   background: none;
   border: 2px solid white;
   border-radius: 50px;
+  transition:  1000ms;
 }
 
+.secondary-button:hover {
+  transform: translateY(-0.5rem);
+  transition: transform 250ms;
+  background-color: #5b5bb0;
+}
 
 
 /* ====================
@@ -166,8 +183,8 @@ address {
   color: #fff;
 }
 
-.bg-shade {
-  background-color: var(--clr-primary-500);
+.bg-purple-shade {
+  background-color: var(--clr-neutral-300);
 }
 
 .bg-galaxy {
@@ -640,7 +657,6 @@ nav a {
       transform: scale(1);
     }
    }
-
 
    .slideInLeft {
     animation: slideInLeft 1s ease;
