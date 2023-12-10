@@ -257,9 +257,7 @@ img {
   padding-bottom: 3em;
 }
 
-.img-flex-section .image-container {
-  padding-bottom: 2em;
-}
+
 
 .short-img {
   margin-bottom: 2em;
@@ -387,6 +385,7 @@ table {
   border-collapse: collapse;
   margin-top: 1.25em;
   background-color: #fff;
+  margin-bottom: 6rem;
 }
 
 th,
@@ -541,6 +540,10 @@ footer {
   width: 10em;
 }
 
+/* ====================
+   Navigation
+   ==================== */
+
 .mobile-nav-toggle {
   display: none;
 }
@@ -558,6 +561,14 @@ footer {
 
 nav a {
   color: #000;
+}
+
+nav a:hover, .active {
+  color: #fff;
+  background-color: var(--clr-primary-500);
+  padding: 0.2em 0.6em;
+  border-radius: 50px;
+  transition: 400ms;
 }
 
 @media (max-width: 35em) {
