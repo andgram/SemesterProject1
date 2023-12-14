@@ -7,6 +7,7 @@
   --clr-primary-600: #2C2C54;
   --clr-primary-700: #171741;
 
+  --clr-neutral-400: #ECECEC;
   --clr-neutral-300: #cecee1;
   
   
@@ -190,6 +191,10 @@ address {
 
 .bg-purple {
   background-color: var(--clr-primary-600);
+}
+
+.bg-shade {
+  background-color: var(--clr-neutral-300);
 }
 
 .museum-bg {
@@ -385,7 +390,6 @@ table {
   border-collapse: collapse;
   margin-top: 1.25em;
   background-color: #fff;
-  margin-bottom: 6rem;
 }
 
 th,
@@ -561,15 +565,26 @@ footer {
 
 nav a {
   color: #000;
+  position: relative;
 }
 
-nav a:hover, .active {
-  color: #fff;
-  background-color: var(--clr-primary-500);
-  padding: 0.2em 0.6em;
-  border-radius: 50px;
-  transition: 400ms;
+nav a:after {
+  content: "";
+  position: absolute;
+  background-color: var(--clr-primary-600);
+  height: 3px;
+  width: 0%;
+  left: 50%;
+  bottom: -5px;
+  transition: 0.3s;
+  transform: translateX(-50%);
+  border-radius: 3px
 }
+
+nav a:hover::after, a.active::after {
+  width: 100%;
+}
+
 
 @media (max-width: 35em) {
   .primary-navigation {
@@ -657,6 +672,32 @@ nav a:hover, .active {
     margin: 0;
   }
 }
+
+/* ====================
+   Form
+   ==================== */
+
+   form {
+    margin: 0 auto;
+
+   }   
+
+   label {
+    display: block;
+    margin: .6em 0;
+    font-weight: 600;
+   }
+
+    input,
+    textarea {
+    width: 100%;
+    padding: .4rem;
+    margin-bottom: 1.6rem;
+    border-radius: 10px;
+    border: none;
+    }
+
+    
 
 /* ====================
    Animations
