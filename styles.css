@@ -97,16 +97,6 @@ a {
   font-size: var(--fs-300);
 }
 
-.extra-space h3,
-.extra-space h2 {
-  margin-top: 2em;
-}
-
-.extra-space h1 {
-  margin-top: 0;
-  margin-bottom: .4rem;
-}
-
 address {
   font-style: normal;
 }
@@ -208,6 +198,10 @@ address {
   text-align: left;
 }
 
+.double-paragraph-spacing {
+  margin-bottom: 3rem;
+}
+
 
 @media (min-width: 50em) {
   .section-spacing {
@@ -291,6 +285,7 @@ img {
    Image Gallery
    ==================== */
 
+
 .image-grid-container {
   display: grid;
   gap: 2em;
@@ -359,6 +354,10 @@ img {
   flex: 0 0 30%;
   min-width: 12.5em;
   max-width: 30em;
+}
+
+.card p {
+  margin: 0;
 }
 
 .card img {
@@ -597,8 +596,7 @@ nav a:hover::after, a.active::after {
 
     transform: translateX(100%);
     transition: transform 350ms ease-out;
-
-    background: #aeaede;
+    background: var(--clr-neutral-300);
   }
 
   .primary-navigation[data-visible="true"] {
