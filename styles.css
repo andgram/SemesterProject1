@@ -202,7 +202,6 @@ address {
   margin-bottom: 3rem;
 }
 
-
 @media (min-width: 50em) {
   .section-spacing {
     padding: 7rem 0;
@@ -252,34 +251,30 @@ img {
   border-radius: 15px;
 }
 
-.img-flex-section {
-  padding-bottom: 3em;
-}
-
-
-
 .short-img {
   margin-bottom: 2em;
   margin-top: 4em;
 }
 
-.last-img {
-  padding-bottom: 2em;
+.exhibition-info > div {
+  margin-bottom: 6em;
 }
 
-@media (min-width: 50em) {
-  .img-flex-section p {
-    margin: 0;
+.exhibition-info div:last-child {
+  margin-bottom: 0em;
+}
+
+@media (max-width: 50em) {
+  .exhibition-info > div {
+    margin-bottom: 4em;
   }
 
-  .img-flex-section {
-    padding-bottom: 6em;
-  }
-
-  .img-flex-section.image-container {
-    padding-bottom: 0em;
+  .exhibition-info img {
+    margin-bottom: 2em ;
   }
 }
+
+
 
 /* ====================
    Image Gallery
