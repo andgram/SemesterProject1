@@ -126,7 +126,8 @@ address {
   border-radius: 50px;
   transition: transform 1000ms;
   font-size: var(--fs-300);
-  margin-top: 1rem;
+  margin-top: 1em;
+  display: inline-block;
 }
 
 .main-button:hover {
