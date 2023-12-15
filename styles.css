@@ -267,6 +267,10 @@ img {
   margin-bottom: 0em;
 }
 
+@media (min-width: 50em) {
+  
+}
+  
 @media (max-width: 50em) {
   .exhibition-info>div {
     margin-bottom: 4em;
@@ -274,6 +278,10 @@ img {
 
   .exhibition-info img {
     margin-bottom: 2em;
+  }
+
+  .remove-on-mobile {
+    display: none;
   }
 }
 
