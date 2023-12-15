@@ -178,7 +178,7 @@ address {
 }
 
 .bg-galaxy {
-  background-image: url('/images/galaxy-bg.jpg');
+  background-image: url('images/galaxy-bg.jpg');
   background-size: cover;
 }
 
@@ -191,7 +191,7 @@ address {
 }
 
 .museum-bg {
-  background-image: url('/images/museum-bg.jpg');
+  background-image: url('images/museum-bg.jpg');
   color: white;
   background-size: cover;
   text-align: center;
@@ -308,28 +308,28 @@ img {
 
 .img-card1 {
   grid-area: left;
-  background-image: url('/images/science-boy-1-1.jpg');
+  background-image: url('images/science-boy-1-1.jpg');
 }
 
 .img-card2 {
-  background-image: url('/images/mammoth.jpg');
+  background-image: url('images/mammoth.jpg');
 }
 
 .img-card3 {
-  background-image: url('/images/childgame.jpeg');
+  background-image: url('images/childgame.jpeg');
 }
 
 .img-card4 {
-  background-image: url('/images/cafe.jpg');
+  background-image: url('images/cafe.jpg');
   grid-area: left;
 }
 
 .img-card5 {
-  background-image: url('/images/egg.jpg');
+  background-image: url('images/egg.jpg');
 }
 
 .img-card6 {
-  background-image: url('/images/coffee.jpg');
+  background-image: url('images/coffee.jpg');
 }
 
 @media (max-width: 50em) {
