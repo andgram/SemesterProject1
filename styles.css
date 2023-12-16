@@ -299,12 +299,15 @@ img {
     "left ."
     "left .";
   aspect-ratio: 1;
+  width: 100%;
+  height: auto;
 }
 
 .img-card {
   border-radius: 30px;
   background-size: cover;
   background-position: center center;
+
 }
 
 .img-card1 {
