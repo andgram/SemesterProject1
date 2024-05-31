@@ -1,6 +1,8 @@
 # Community Science Museum – Semester Project 1
 
 ## Community Science Museum
+![community](https://github.com/andgram/SemesterProject1/assets/145982786/5e35523f-80d0-4467-9599-fd8da44c963f)
+
 
 ### Overview
 
@@ -36,5 +38,10 @@ To get started with the project, follow these steps:
 ### Running
 
 To run the app, execute the following command:
-```bash
-npm run start
+    ```bash
+    npm run start
+    ```
+
+## Contact
+
+- [My LinkedIn page](https://www.linkedin.com/in/andreas-gramstad-416408253/)
